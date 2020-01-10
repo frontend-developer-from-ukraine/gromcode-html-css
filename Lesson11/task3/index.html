@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <style>
+        .dropdown {
+            background-color: darkgreen;
+            color: white;
+            display: inline-block;
+            position: relative;
+            margin: 16px;
+            padding: 16px;
+            opacity: 0.8;
+            font-size: 16px;
+        }
+        
+        .menu-list {
+            background: lightcyan;
+            color: black;
+            list-style-type: none;
+            position: absolute;
+            display: none;
+            margin: 0;
+            padding: 0;
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+            min-width: 120px;
+            z-index: 1;
+            top: 50px;
+            left: 0;
+        }
+        
+        .menu-item {
+            padding: 16px;
+        }
+        
+        .menu-item:hover {
+            background: ghostwhite;
+        }
+        
+        .dropdown:hover {
+            cursor: pointer;
+            opacity: 1;
+        }
+        
+        .dropdown:hover .menu-list {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <span class="menu-button">Hover me</span>
+        <ul class="menu-list">
+            <li class="menu-item">Cars</li>
+            <li class="menu-item">Planes</li>
+            <li class="menu-item">Ships</li>
+        </ul>
+    </div>
+</body>
+
+</html>
