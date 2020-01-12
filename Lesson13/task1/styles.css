@@ -11,3 +11,7 @@
     background-repeat: no-repeat;
     background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/task1/nature.jpeg");
 }
+
+* {
+    box-sizing: border-box;
+}
