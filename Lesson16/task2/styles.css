@@ -1,0 +1,12 @@
+.form-control,
+.choose-gender {
+    margin: 16px;
+}
+
+#id-check {
+    margin-right: 5px;
+}
+
+#id_age {
+    margin-left: 5px;
+}
