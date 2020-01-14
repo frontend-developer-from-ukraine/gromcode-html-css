@@ -3,40 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
-    <style>
-        div {
-            margin: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <main class="page">
-        <form class="login-form">
-            <h1 class="form-title">Login</h1>
-            <div class="form-control">
-                <label class="form-label" for="email">Email
-                    <input class="form-input" type="email" id="email" name="email" placeholder="mail@example.com" required />
+    <form class="form">
+        <div class="form-control">
+            <input type="text" name="lastName" value="Emerson">
+        </div>
+        <div class="form-control">
+            <input type="number" name="age" value="17">
+        </div>
+        <div class="form-control">
+            <input type="checkbox" name="agree">Accept terms and conditions
+        </div>
+        <div class="choose-gender">
 
-                </label>
-            </div>
-            <div class="form-control">
-                <label class="form-label" for="userName">Full Name
-                    <input class="form-input" type="text" id="userName" name="userName" />
-
-                </label>
-            </div>
-            <div class="form-control">
-                <label class="form-label" for="password">Password
-                    <input class="form-input" type="password" id="password" name="password" required />
-
-                </label>
-            </div>
-            <button class="submit-button" type="submit">Submit</button>
-        </form>
-    </main>
+            <input type="radio" name="gender" id="male-gender" checked>
+            <label for="male-gender" class="male-checked">Male</label>
+            <input type="radio" name="gender" id="female-gender">
+            <label for="female-gender">Female</label>
+            <input type="radio" name="gender" id="secret-gender">
+            <label for="secret-gender">Secret</label>
+        </div>
+        <div class="form-control">
+            <textarea name="description" placeholder="Write description..."></textarea>
+        </div>
+        <div class="form-control">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 </body>
 
 </html>
