@@ -3,15 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Наследование в CSS</title>
+    <title>Images</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
-
     <style>
-        .form-control {
-            margin: 16px;
-        }
-        
-        .choose-gender {
+        div {
             margin: 16px;
         }
     </style>
@@ -19,27 +14,20 @@
 
 <body>
     <form>
-        <div class="form-control">
-            <input type="text" value="Emerson" name="lastName">
-        </div>
-        <div class="form-control">
-            <input type="number" name="age" value="17">
-        </div>
-        <div class="form-control">
-            <input type="checkbox" name="agree">Accept terms and conditions
-        </div>
+        <div><input type="text" name="lastName" value="Emerson"></div>
+        <div><input type="number" name="age" value="17"></div>
+        <div><input type="checkbox" name="agree">Accept terms and conditions</div>
         <div class="choose-gender">
-            <input type="radio" name="gender" checked>Male
-            <input type="radio" name="gender"> Female
-            <input type="radio" name="gender"> Secret
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Secret
         </div>
-        <div class="form-control">
+        <div>
             <textarea name="description" placeholder="Write description..."></textarea>
         </div>
-        <div class="form-control">
-            <button type="submit">Submit</button>
-        </div>
+        <div><button type="submit">Submit</button></div>
     </form>
+
 </body>
 
 </html>
