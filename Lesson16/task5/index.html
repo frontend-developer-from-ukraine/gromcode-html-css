@@ -24,13 +24,13 @@
 <body>
     <form class="form">
         <div class="control">
-            <input type="text" name="primaryLanguage" value="HTML">
+            <input type="text" name="primaryLanguage" value="HTML" disabled>
         </div>
         <div class="control">
             <input type="checkbox" name="agree">
         </div>
         <div class="control">
-            <input type="checkbox" name="like">
+            <input type="checkbox" name="like" checked readonly>
         </div>
         <div class="control">
             <input type="color" name="favouriteColor" value="#ff7f50">
@@ -61,8 +61,8 @@
         </div>
         <div class="languages control">
             <input type="radio" name="language" value="html">HTML
-            <input type="radio" name="language" value="css">CSS
-            <input type="radio" name="language" value="javascript">JavaScript
+            <input type="radio" name="language" value="css" checked>CSS
+            <input type="radio" name="language" value="javascript">
         </div>
         <div class="control">
             <input type="range" name="learningProgress" value="30">
@@ -87,7 +87,7 @@
             <input type="week" name="birthWeek" value="2021-W51">
         </div>
         <div class="control">
-            <button type="submit"></button>
+            <button type="submit">Save</button>
         </div>
     </form>
 </body>
