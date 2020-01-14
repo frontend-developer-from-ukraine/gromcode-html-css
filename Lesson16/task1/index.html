@@ -5,22 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <style>
-        .form-control,
-        .choose-gender {
-            margin: 16px;
-        }
-        
-        .choose-gender .male-checked {
-            margin-left: -5px;
-        }
-    </style>
 </head>
 
 <body>
-    <form class="form">
+    <form>
         <div class="form-control">
             <input type="text" name="lastName" value="Emerson">
         </div>
@@ -31,13 +21,12 @@
             <input type="checkbox" name="agree">Accept terms and conditions
         </div>
         <div class="choose-gender">
-
-            <input type="radio" name="gender" id="male-gender" checked>
-            <label for="male-gender" class="male-checked">Male</label>
-            <input type="radio" name="gender" id="female-gender">
-            <label for="female-gender">Female</label>
-            <input type="radio" name="gender" id="secret-gender">
-            <label for="secret-gender">Secret</label>
+            <input id="male" type="radio" name="gender" checked>
+            <label for="male">Male</label>
+            <input id="female" type="radio" name="gender">
+            <label for="female">Female</label>
+            <input id="secret" type="radio" name="gender">
+            <label for="secret">Secret</label>
         </div>
         <div class="form-control">
             <textarea name="description" placeholder="Write description..."></textarea>
@@ -46,6 +35,7 @@
             <button type="submit">Submit</button>
         </div>
     </form>
+
 </body>
 
 </html>
