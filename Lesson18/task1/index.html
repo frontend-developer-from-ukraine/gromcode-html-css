@@ -8,13 +8,15 @@
     <style>
         .row {
             display: flex;
+            width: 100%;
         }
         
         .column {
             display: flex;
             flex-direction: column;
+            width: 50%;
+            justify-content: center;
             align-items: center;
-            flex: 1;
         }
         
         .small-bird {
@@ -32,12 +34,12 @@
 <body>
     <div class="row">
         <div class="column">
-            <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task1/image.png" class="small-bird" src="image.png" alt="PNG small">
-            <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task1/image.png" class="large-bird" src="image.png" alt="PNG large">
+            <img class="small-bird" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task1/image.png" alt="PNG small">
+            <img class="large-bird" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task1/image.png" alt="PNG large">
         </div>
         <div class="column">
-            <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task1/image.svg" class="small-bird" src="image.svg" alt="SVG small">
-            <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task1/image.svg" class="large-bird" src="image.svg" alt="SVG large">
+            <img class="small" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task1/image.svg" alt="SVG small">
+            <img class="large-bird" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task1/image.svg" alt="SVG large">
         </div>
     </div>
 </body>
