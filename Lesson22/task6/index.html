@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            height: 100%;
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #555;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            background: linear-gradient(60deg, red, orange);
+        }
+        
+        .footer {
+            padding: 0.5em;
+            background-color: #e5e5e5;
+            text-align: center;
+            flex: 0 0 auto;
+        }
+        
+        .navigation,
+        .section,
+        .news {
+            padding: 0.5em;
+        }
+        
+        .nav-list {
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        .nav-list-item {
+            display: flex;
+            height: 2em;
+            margin: 0.5em 0;
+            align-items: center;
+            background-color: #808080;
+        }
+        
+        .section {
+            font-size: 1.25em;
+        }
+        
+        .section__header {
+            font-size: 5vw;
+            text-align: center;
+        }
+        
+        .nav-list-link {
+            margin: 0.5em;
+            color: white;
+            text-decoration: none;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        
+        .main {
+            flex-grow: 1;
+        }
+        
+        .css-units {
+            font-size: 1.125em;
+            font-weight: 700;
+            background-color: #e5e5e5;
+            color: #8b0000;
+        }
+        
+        .units-list {
+            line-height: 1.75em;
+        }
+        
+        @media screen and (min-width: 600px) {
+            .main {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: flex-start;
+            }
+            .navigation {
+                width: 20%;
+            }
+            .section {
+                width: 80%;
+            }
+        }
+        
+        .img {
+            max-width: 100%;
+            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media screen and (min-width: 900px) {
+            .section {
+                width: 60%;
+            }
+            .news {
+                width: 20%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Responsive website</h1>
+    </header>
+
+    <main class="main">
+        <ul class="nav-list">
+            <li class="nav-list-item"><a class="nav-list-link" href="#">Responsive images</a></li>
+            <li class="nav-list-item"><a class="nav-list-link" href="#">Mediaqueries</a></li>
+            <li class="nav-list-item"><a class="nav-list-link" href="#">Flexbox</a></li>
+        </ul>
+
+
+        <h2 class="section__header">True story</h2>
+        <picture class="section__img">
+            <source srcset="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/big.png" media="(min-width: 600px)">
+            <source srcset="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/small.png">
+            <img class="img" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/big.png" alt="Nature">
+        </picture>
+        <p>There are few ways to define <code>font-size</code>:</p>
+        <ul class="units-list">
+            <li><span class="css-units">px</span> are good if you need strict definition for a size of text. In other cases it is better to use relative units listed below.</li>
+            <li><span class="css-units">em</span> based on current font size</li>
+            <li><span class="css-units">rem</span> based on <code>&lt;html&gt;</code> font-size</li>
+            <li><span class="css-units">%</span> based on parent font size</li>
+            <li><span class="css-units">vh</span> (viewport height) based on screen height</li>
+            <li><span class="css-units">vw</span> (viewport width) based on screen width</li>
+        </ul>
+    </main>>
+    <aside class="news">
+        <h2>Not a news</h2>
+        <p>A web page should look good on any device!</p>
+    </aside>
+
+    <footer class="footer">Welcome to the responsive world!</footer>
+</body>
+
+</html>
