@@ -1,27 +1,24 @@
-@import 'breakpoints.scss';
+@import "breakpoints.scss";
 * {
     box-sizing: border-box;
 }
 
 .container {
+    height: 100vh;
     display: flex;
-    @include change-view {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    @include for-portrait {
         flex-direction: column;
     }
 }
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
 .square {
-    width: 100px;
     height: 100px;
-    background-color: #ff7f50;
+    width: 100px;
     margin: 8px;
+    background-color: #ff7f50;
     @include for-medium {
         background-color: #8a2be2;
     }

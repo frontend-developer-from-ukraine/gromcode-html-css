@@ -1,18 +1,40 @@
-/* Error: Undefined mixin.
- *    ,
- * 8  | /     @include change-view {
- * 9  | |         flex-direction: column;
- * 10 | \     }
- *    '
- *   index.scss 8:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 8  \2502  \250c      @include change-view {\a 9  \2502  \2502          flex-direction: column;\a 10 \2502  \2514      }\a    \2575 \a   index.scss 8:5  root stylesheet";
+* {
+  box-sizing: border-box;
 }
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+@media only screen and (orientation: portrait) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  margin: 8px;
+  background-color: #ff7f50;
+}
+@media screen and (min-width: 600px) {
+  .square {
+    background-color: #8a2be2;
+  }
+}
+@media screen and (min-width: 899px) {
+  .square {
+    background-color: #a61;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .square {
+    background-color: #c47;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
