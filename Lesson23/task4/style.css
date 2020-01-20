@@ -8,17 +8,17 @@ body {
   }
 }
 
-.main-blocks {
+.blocks {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 600px) {
-  .main-blocks {
+  .blocks {
     flex-direction: row;
   }
 }
 @media screen and (min-width: 900px) {
-  .main-blocks {
+  .blocks {
     flex-direction: row;
   }
 }
