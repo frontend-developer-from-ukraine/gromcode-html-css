@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 900px) {
+  body {
+    flex-direction: row;
+  }
+}
+
+.main-blocks {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 600px) {
+  .main-blocks {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 900px) {
+  .main-blocks {
+    flex-direction: row;
+  }
+}
+
+.block {
+  height: 200px;
+  display: flex;
+  width: 100%;
+}
+
+.navigation {
+  background-color: #ff7f50;
+}
+
+.product-list {
+  background-color: #006400;
+}
+
+.news {
+  background-color: #0ff;
+}
+.block-text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 8px;
+  background-color: #faebd7;
+  text-transform: lowercase;
+  border-radius: 4px;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,48 @@
+@import "variables.scss";
+@import "breakpoints.scss";
+body {
+    display: flex;
+    flex-direction: column;
+    @include for-xlarge {
+        flex-direction: row;
+    }
+}
+
+.main-blocks {
+    display: flex;
+    flex-direction: column;
+    @include for-medium {
+        flex-direction: row;
+    }
+    @include for-xlarge {
+        flex-direction: row;
+    }
+}
+
+.block {
+    height: 200px;
+    display: flex;
+    width: 100%;
+}
+
+.navigation {
+    background-color: $nav-color;
+}
+
+.product-list {
+    background-color: $pro-list-color;
+}
+
+.news {
+    background-color: $news-color;
+    @include for-xlarge {}
+}
+
+.block-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px;
+    background-color: $text-block-color;
+    text-transform: lowercase;
+    border-radius: 4px;
+    margin: auto;
+}
