@@ -1,18 +1,56 @@
-/* Error: expected ";".
- *    ,
- * 29 |     list-style: none box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
- *    |                                ^
- *    '
- *   header.scss 29:32  @import
- *   index.scss 1:9     root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a    \2577 \a 29 \2502      list-style: none box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);\d\a    \2502                                 ^\a    \2575 \a   header.scss 29:32  @import\a   index.scss 1:9     root stylesheet';
+.header {
+  background-color: #006400;
 }
+
+.menu {
+  margin: 0;
+  margin-left: 0.5em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  height: 3em;
+  list-style: none;
+  color: white;
+}
+.menu__item {
+  padding: 0 8px;
+  line-height: 3em;
+}
+.menu__item_active {
+  color: yellow;
+}
+.menu__item_active:hover > .submenu {
+  display: block;
+}
+.menu__item:hover {
+  background-color: #9acd32;
+  color: yellow;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  list-style: none;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  background-color: #ff7f50;
+}
+.submenu__item {
+  min-width: 120px;
+  padding: 0 8px;
+  color: white;
+}
+.submenu__item:hover {
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
