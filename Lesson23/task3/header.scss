@@ -9,7 +9,6 @@
     list-style: none;
     color: white;
     &__item {
-        padding: 0 8px;
         line-height: 3em;
         &_active {
             color: yellow;
@@ -27,8 +26,7 @@
 .submenu {
     display: none;
     position: absolute;
-    list-style: none;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    list-style: none box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
     color: #fff;
     background-color: #ff7f50;
     &__item {
