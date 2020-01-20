@@ -3,12 +3,10 @@
 }
 
 .menu {
-  margin-left: 0.5em;
   text-transform: uppercase;
-  list-style: none;
   display: flex;
   align-items: center;
-  height: 3em;
+  list-style: none;
   color: white;
 }
 .menu__item {
